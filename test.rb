@@ -8,7 +8,10 @@ work do
   puts "13-Pin LED Basic Blinking [Iuri Madeira - github.com/iurimadeira]"
   puts "Firmware name #{board.firmware_name}"
   puts "Firmata version #{board.version}"
-  every 1.second do
-    led.toggle
+
+  loop do
+    sleep 0.1
+    p a
+    #led.toggle
   end
 end
